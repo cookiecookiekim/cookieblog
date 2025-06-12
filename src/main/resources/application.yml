@@ -1,0 +1,25 @@
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/cookieblog
+#    username: cookieblog
+#    password: cookieblog
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  data:
+    web:
+      pageable:
+        one-indexed-parameters: true
+        default-page-size: 5
+  #    web으로부터.. 페이징 false라면 0부터, true로 바꾸면 1부터
+
+  #    h2 url이 계속 바뀌어서 아래와 같은 추가 설정
+  datasource:
+    url: jdbc:h2:mem:cookieblog
+    username: cookieblog
+    password:
+    driver-class-name: org.h2.Driver

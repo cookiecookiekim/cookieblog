@@ -1,0 +1,16 @@
+package com.cookieblog.exception;
+
+// 정책상 404로 내려줘야 함
+public class PostNotFound extends CookieException {
+
+    private static final String MESSAGE = "존재하지 않는 글입니다.";
+
+    public PostNotFound() {
+        super(MESSAGE);
+    }
+
+    @Override
+    public int getStatusCode(){
+        return 404;
+    }
+}
