@@ -36,3 +36,6 @@ out/
 ### VS Code ###
 .vscode/
 
+# cookieblog
+nvm-16
+nodeenv-16
