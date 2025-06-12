@@ -115,7 +115,7 @@ public class PostController {
         request.validate();
         postService.write(request);
 
-        System.out.println("hello world1");
+        System.out.println("hello world2");
     }
 
     // 게시글 하나 조회할 때
