@@ -35,7 +35,7 @@ onMounted(()=>{
 
       <div class="sub d-flex">
         <div class="category">개발</div>
-        <div class="regDate">2025-06-17</div>
+        <div class="regDate">2025-06-17 18:39:23</div>
       </div>
     </el-col>
   </el-row>
@@ -65,12 +65,14 @@ onMounted(()=>{
 
 .content {
   font-size: 0.85rem;
-  margin-top: 8px;
-  color: #7e7e7e;
+  margin-top: 12px;
+  color: #4e4e4e;
+  white-space: break-spaces; // 이거 해야 글 내용이 띄어쓰기와 줄바꿈 적용됨.
+  line-height: 1.5;
 }
 
 .sub {
-  margin-top: 8px;
+  margin-top: 10px;
   font-size: 0.78rem;
 
   .regDate {
